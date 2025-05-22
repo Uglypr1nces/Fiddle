@@ -14,3 +14,6 @@ A simple, fast, and flexible CLI tool to interact with files and folders.
 
 ---
 
+## IMPORTANT
+
+This project is going to be delayed since i want to switch over to C so i can get a deeper knowledge and understanding of what im doing, until then i feel like its a waste to program in Rust since libraries almost feel mandotary.

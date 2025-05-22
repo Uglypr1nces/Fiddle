@@ -12,13 +12,24 @@ src/tools.rs - file manipulation
 src/core.rs - general functions and variables
 */
 
-pub mod tools;
 
 use fiddle::*;
-use fiddle::tools::FIRST_GREETING;
+use std::io::stdin;
+
+const OPTIONS:[&str; 3] = ["change file/folder name", "search for data in file/folder", "get file/folder information"];
 
 fn main() {
-    check_init();
+    let mut user_choice:String = String::new();
 
-    println!("{}", FIRST_GREETING);
+    for option in OPTIONS.iter(){
+        println!("{}",option);
+    }
+
+    println!("What do you need to do? (1,2,3)");
+
+    stdin().read_line(&mut user_choice)
+        .ok()
+        .expect("Couldnt save save user choice");
+
+    
 }

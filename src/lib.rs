@@ -9,8 +9,6 @@ tools.rs
 */
 
 pub use tools::tools_init_test;
-//pub use tools::first_greeting;
-
 /*
 core.rs
     -Functions
@@ -18,6 +16,7 @@ core.rs
 */
 
 pub use core::core_init_test;
+pub use core::FIRST_GREETING;
 
 
 pub fn check_init() {
